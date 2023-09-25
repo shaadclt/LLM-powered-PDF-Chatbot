@@ -1,10 +1,16 @@
 # LLM-powered PDF Chatbot 
 
-This is a Streamlit-based PDF Chatbot powered by OpenAI's Language Models.
+This is a Streamlit-based PDF Chatbot powered by OpenAI's Language Models. The chatbot allows users to upload PDF files, extract text content, and ask natural language questions about the PDF content. Key project components include:
 
-## Overview
+PDF Text Extraction: Utilized the PyPDF2 library to extract text from uploaded PDF files, enabling easy access to the document's content.
 
-This project allows you to upload a PDF file, extract text from it, and then use OpenAI's language models to answer questions about the content of the PDF.
+Text Splitting: Implemented a custom text splitter to break down the extracted text into manageable chunks for efficient processing.
+
+Embeddings and Vector Stores: Generated embeddings using OpenAI's Language Models and created a Vector Store using FAISS for efficient text similarity search.
+
+Question Answering: Integrated OpenAI's LLMs to provide accurate answers to user queries about the PDF content.
+
+Persistence: Implemented data persistence by storing generated embeddings to accelerate future queries.
 
 ## Getting Started
 
